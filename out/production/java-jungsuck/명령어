@@ -1,0 +1,3 @@
+javac -encoding utf-8 FileHead.java
+
+java FileHead 10 FileHead.java
