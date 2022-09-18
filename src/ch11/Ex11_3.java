@@ -14,6 +14,10 @@ class Student implements Comparable {
     int eng;
     int math;
 
+    public Student() {
+
+    }
+
     public Student(String name, int ban, int no, int kor, int eng, int math) {
         this.name = name;
         this.ban = ban;
@@ -51,6 +55,10 @@ class Student implements Comparable {
         return this.name.compareTo(anotherStudent.name);
     }
 
+    public String sth() {
+        return null;
+    }
+
 }
 
 public class Ex11_3 {
@@ -61,7 +69,6 @@ public class Ex11_3 {
         list.add(new Student("김자바", 1, 3, 80, 80, 90));
         list.add(new Student("이자바", 1, 4, 70, 90, 70));
         list.add(new Student("안자바", 1, 5, 60, 100, 80));
-        list.add("string");
 
         Collections.sort(list);
         Iterator iterator = list.iterator();
@@ -69,6 +76,8 @@ public class Ex11_3 {
         while (iterator.hasNext()) {
             System.out.println("iterator = " + iterator.next());
         }
+
+//        new Student().sth().equals("3");
 
     }
 }
