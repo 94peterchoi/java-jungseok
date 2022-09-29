@@ -5,14 +5,12 @@ public class Page469 {
         Object[] objects = new String[1];
         objects[0] = 1;
 
-
     }
-
 }
 
-class Box<T> {
+class Box3<T> {
 
-    Box<?> box = new Box<Object>();
+    Box3<?> box = new Box3<Object>();
     Object[] objects = new String[1];
 
 }
